@@ -10,7 +10,9 @@ struct ScrumdingerApp: App {
         WindowGroup {
             NavigationView {
                 ScrumsView(scrums: DailyScrum.sampleData)
+//                DetailEditView()
             }
         }
     }
 }
+//
