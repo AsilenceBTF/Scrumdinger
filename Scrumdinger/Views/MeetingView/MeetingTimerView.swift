@@ -7,14 +7,45 @@
 
 import SwiftUI
 
-struct MeetingTimerView: View { 
+struct MeetingTimerView: View {
+    let speakers: [ScrumTimer.Speaker]
+    let theme: Theme
+    private var currentSpeaker: String {
+        speakers.first(where: { !$0.isCompleted })?.name ?? "Someone"
+    }
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Circle()
+            .strokeBorder(lineWidth: 24)
+            .overlay(content: {
+                VStack {
+                    Text(currentSpeaker)
+                        .font(.title)
+                    Text("is speaking")
+                }
+                .accessibilityElement(children: .combine)
+                .foregroundStyle(theme.accentColor)
+            })
+            .overlay(content: {
+                ForEach(speakers, content: { speaker in
+                    if speaker.isCompleted, let index = speakers.firstIndex(where: { $0.id == speaker.id }) {
+                        SpeakerArc(speakerIndex: index, totalSpeakers: speakers.count)
+                            .rotation(Angle(degrees: -90))
+                            .stroke(theme.mainColor, lineWidth: 12)
+                    }
+                })
+            })
+            .padding(.horizontal)
     }
 }
 
 struct MeetingTimerView_Previews: PreviewProvider {
+    
+    static var speakers: [ScrumTimer.Speaker] {
+        [ScrumTimer.Speaker(name: "Bill", isCompleted: true), ScrumTimer.Speaker(name: "Cathy", isCompleted: false)]
+    }
+    
     static var previews: some View {
-        MeetingTimerView()
+        MeetingTimerView(speakers: speakers, theme: .bubblegum)
     }
 }
