@@ -22,6 +22,8 @@
 		6A788EB327E4D08000D31C66 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A788EB227E4D08000D31C66 /* MeetingFooterView.swift */; };
 		6A788EB527E4DA8C00D31C66 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A788EB427E4DA8C00D31C66 /* AVPlayer+Ding.swift */; };
 		6A788EB727E4DB6900D31C66 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6A788EB627E4DB6900D31C66 /* ding.wav */; };
+		6ABF919427E8411F00ABA8B8 /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF919327E8411F00ABA8B8 /* ErrorWrapper.swift */; };
+		6ABF919627E8424300ABA8B8 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABF919527E8424300ABA8B8 /* ErrorView.swift */; };
 		6ADFEB1A27E6071500818A61 /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADFEB1927E6071500818A61 /* History.swift */; };
 		6ADFEB1C27E626BD00818A61 /* ScrumStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ADFEB1B27E626BD00818A61 /* ScrumStore.swift */; };
 		7CB413DF26EA824100544BA7 /* ScrumdingerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB413DE26EA824100544BA7 /* ScrumdingerApp.swift */; };
@@ -46,6 +48,8 @@
 		6A788EB227E4D08000D31C66 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		6A788EB427E4DA8C00D31C66 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "AVPlayer+Ding.swift"; path = "Scrumdinger/Views/AVPlayer+Ding.swift"; sourceTree = SOURCE_ROOT; };
 		6A788EB627E4DB6900D31C66 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		6ABF919327E8411F00ABA8B8 /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		6ABF919527E8424300ABA8B8 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ErrorView.swift; path = Scrumdinger/Models/ErrorView.swift; sourceTree = SOURCE_ROOT; };
 		6ADFEB1927E6071500818A61 /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = History.swift; path = Scrumdinger/Views/History.swift; sourceTree = SOURCE_ROOT; };
 		6ADFEB1B27E626BD00818A61 /* ScrumStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumStore.swift; sourceTree = "<group>"; };
 		7CB413DB26EA824100544BA7 /* Scrumdinger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scrumdinger.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,6 +81,7 @@
 				6A788EAE27E4B3D100D31C66 /* ScrumProgressViewStyle.swift */,
 				6A67CA3A27E31A12006C0837 /* DailyScrum.swift */,
 				6ADFEB1B27E626BD00818A61 /* ScrumStore.swift */,
+				6ABF919327E8411F00ABA8B8 /* ErrorWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 		6A67CA4227E325C5006C0837 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6ABF919527E8424300ABA8B8 /* ErrorView.swift */,
 				6A788EA827E4AD0100D31C66 /* MeetingHeaderView.swift */,
 				6A788EA227E34FB300D31C66 /* DetailEditView.swift */,
 				7CB413E026EA824100544BA7 /* MeetingView.swift */,
@@ -223,10 +229,12 @@
 				6A67CA4527E32648006C0837 /* DetailView.swift in Sources */,
 				6A788EA927E4AD0100D31C66 /* MeetingHeaderView.swift in Sources */,
 				6A788EA327E34FB300D31C66 /* DetailEditView.swift in Sources */,
+				6ABF919427E8411F00ABA8B8 /* ErrorWrapper.swift in Sources */,
 				6A67CA3F27E31B09006C0837 /* TrailingIconLabelStyle.swift in Sources */,
 				6A67CA3927E319F0006C0837 /* Theme.swift in Sources */,
 				6A67CA4127E31BB1006C0837 /* ScrumsView.swift in Sources */,
 				7CB413E126EA824100544BA7 /* MeetingView.swift in Sources */,
+				6ABF919627E8424300ABA8B8 /* ErrorView.swift in Sources */,
 				7CB413DF26EA824100544BA7 /* ScrumdingerApp.swift in Sources */,
 				6A788EA527E435EE00D31C66 /* ThemeView.swift in Sources */,
 				6A67CA3D27E31A2E006C0837 /* CardView.swift in Sources */,
