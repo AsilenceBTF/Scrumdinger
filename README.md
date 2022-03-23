@@ -5,7 +5,7 @@ The project is kind of a to-do-list App based Swift
 
 <img src="Images/scrumsview.png" alt="scrumsview"  width="350" />
 
-<img src="Images/scrumdetail.png" alt="scrumdetail" width="350"" />
+<img src="Images/scrumdetail.png" alt="scrumdetail" width="350" />
 
 <img src="Images/scrumedit.png" alt="scrumedit" width="350" />
 
